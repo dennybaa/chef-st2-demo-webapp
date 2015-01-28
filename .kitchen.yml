@@ -1,0 +1,20 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+  - name: centos-6.4
+
+suites:
+  - name: default
+    run_list:
+      - "recipe[runit::default]"
+      - "recipe[git::default]"
+      - "recipe[nodejs::default]"
+      - "recipe[demo-webapp::default]"
+    attributes:

@@ -1,0 +1,11 @@
+name             'demo-webapp'
+maintainer       'Denis Baryshev (dennybaa@gmail.com)'
+maintainer_email 'dennybaa@gmail.com'
+license          'Apache 2.0'
+description      'Installs/Configures demo-webapp'
+long_description 'Installs/Configures demo-webapp'
+version          '0.1.0'
+
+depends 'nodejs'
+depends 'git'
+depends 'runit'
