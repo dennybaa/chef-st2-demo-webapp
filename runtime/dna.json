@@ -6,6 +6,8 @@
     "recipe[demo-webapp::default]"
   ],
   "demo-webapp": {
-    "license_key": "Insert_your_key_here"
+    "config": {
+      "license_key": "Insert_your_key_here"
+    }
   }
 }
