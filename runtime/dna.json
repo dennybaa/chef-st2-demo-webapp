@@ -1,0 +1,11 @@
+{
+  "run_list": [
+    "recipe[runit::default]",
+    "recipe[git::default]",
+    "recipe[nodejs::default]",
+    "recipe[demo-webapp::default]"
+  ],
+  "demo-webapp": {
+    "license_key": "Insert_your_key_here"
+  }
+}
