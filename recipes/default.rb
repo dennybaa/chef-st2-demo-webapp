@@ -33,8 +33,8 @@ end
 template "/home/#{node['demo-webapp']['user']}/webapp/config.json" do
   variables config: node['demo-webapp']['config']
   action   :create
+  notifies :restart, "runint_service[webapp]"
 end
-
 
 runit_service "webapp" do
   options({
